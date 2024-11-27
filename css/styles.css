@@ -4,7 +4,8 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     background-color: black;
-    line-height: 1.6;
+    line-height: 1.8; /* Adjusted for readability */
+    font-size: 18px; /* Increased the base text size */
 }
 
 header {
@@ -15,10 +16,11 @@ header {
 }
 
 header a {
-    color: #00f;
+    color: #5daeff; /* Lighter blue for the links */
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
+    font-size: 20px; /* Larger header links */
 }
 
 header a:hover {
@@ -32,13 +34,13 @@ main {
 
 /* Page Titles */
 h1 {
-    font-size: 3em;
+    font-size: 3.5em; /* Increased title size */
     margin-bottom: 0.5em;
 }
 
 /* Highlighted Links */
 a {
-    color: #00f;
+    color: #5daeff; /* Lighter blue for all links */
 }
 
 a:hover {

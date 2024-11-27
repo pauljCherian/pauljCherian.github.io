@@ -1,11 +1,14 @@
 /* Shared Styles */
 body {
-    margin: 0;
+    display: flex;               /* Added for footer positioning */
+    flex-direction: column;      /* Ensures header, main, and footer stack vertically */
+    min-height: 100vh;           /* Full height of the viewport */
+    margin: 0;                   /* Removes default margin */
     font-family: Arial, sans-serif;
     color: white;
     background-color: black;
-    line-height: 1.8; /* Adjusted for readability */
-    font-size: 18px; /* Increased the base text size */
+    line-height: 1.8;            /* Adjusted for readability */
+    font-size: 18px;             /* Increased the base text size */
 }
 
 header {
@@ -28,8 +31,18 @@ header a:hover {
 }
 
 main {
+    flex: 1; /* Pushes footer to the bottom */
     margin: 50px;
     max-width: 800px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111; /* Optional: To distinguish footer */
+    padding: 10px;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
 }
 
 /* Page Titles */

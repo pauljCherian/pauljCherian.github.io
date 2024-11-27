@@ -1,16 +1,17 @@
-/* Shared Styles */
+/* Body Styling */
 body {
-    display: flex;               /* Added for footer positioning */
-    flex-direction: column;      /* Ensures header, main, and footer stack vertically */
+    display: flex;               /* Enable Flexbox for layout */
+    flex-direction: column;      /* Stack header, main, and footer vertically */
     min-height: 100vh;           /* Full height of the viewport */
-    margin: 0;                   /* Removes default margin */
+    margin: 0;                   /* Remove default body margin */
     font-family: Arial, sans-serif;
     color: white;
     background-color: black;
-    line-height: 1.8;            /* Adjusted for readability */
-    font-size: 18px;             /* Increased the base text size */
+    line-height: 1.8;            /* Adjust for readability */
+    font-size: 18px;             /* Base text size */
 }
 
+/* Header Styling */
 header {
     position: absolute;
     top: 20px;
@@ -19,41 +20,43 @@ header {
 }
 
 header a {
-    color: #5daeff; /* Lighter blue for the links */
+    color: #5daeff;              /* Lighter blue for the links */
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
-    font-size: 20px; /* Larger header links */
+    font-size: 20px;             /* Larger header links */
 }
 
 header a:hover {
     text-decoration: underline;
 }
 
+/* Main Content Styling */
 main {
-    flex: 1; /* Pushes footer to the bottom */
+    flex: 1;                     /* Push footer to the bottom */
     margin: 50px;
     max-width: 800px;
 }
 
-/* Footer Styles */
+/* Footer Styling */
 footer {
-    background-color: #111; /* Optional: To distinguish footer */
+    background-color: #111;      /* Optional: To distinguish footer */
     padding: 10px;
     text-align: center;
     color: gray;
     font-size: 12px;
+    margin-top: auto;            /* Ensure footer is pushed to the bottom */
 }
 
 /* Page Titles */
 h1 {
-    font-size: 3.5em; /* Increased title size */
+    font-size: 3.5em;            /* Increased title size */
     margin-bottom: 0.5em;
 }
 
 /* Highlighted Links */
 a {
-    color: #5daeff; /* Lighter blue for all links */
+    color: #5daeff;              /* Lighter blue for all links */
 }
 
 a:hover {

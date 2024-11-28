@@ -72,34 +72,3 @@ ul {
 ul li {
     margin-bottom: 10px;
 }
-
-/* Projects Section */
-#projects {
-    margin: 50px auto;
-    max-width: 800px;
-    text-align: left; /* Align content to the left */
-}
-
-.project {
-    margin-bottom: 40px; /* Add space between projects */
-    padding: 20px;
-    background-color: #111; /* Subtle background for project cards */
-    border-radius: 8px; /* Rounded corners for a modern look */
-}
-
-.project h2 {
-    color: #5daeff; /* Highlight project titles in blue */
-}
-
-.project p {
-    margin: 10px 0;
-}
-
-.project ul {
-    margin: 10px 0 0 20px; /* Indent the skill list */
-    list-style-type: disc; /* Use bullets for the list */
-}
-
-.project li {
-    margin-bottom: 5px;
-}

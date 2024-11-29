@@ -43,5 +43,5 @@
 — Coded this website using HTML and CSS
 13. Image Quality Assessment 
 — Worked to train models for classifying the quality of mammograms 
-— Image segmentation, pytorch, U-net architecture
+— Pytorch, Image segmentation, U-net architecture
 

@@ -126,9 +126,23 @@ p, li {
 
 /* Project Image Styling */
 .project-image {
-    width: calc(100% + 40px);  /* Full width plus padding offset */
-    height: 200px;             /* Adjust this value to your preference */
-    object-fit: cover;
-    margin: -20px -20px 15px -20px;  /* Negative margin to offset padding */
-    border-radius: 8px 8px 0 0;      /* Round only top corners to match card */
+    width: 400px;               
+    height: 200px;              
+    object-fit: scale-down;     
+    margin: 0px 0px 15px -20px;
+    border-radius: 0px 0px 0 0;
+    padding: 20px;
+    background-color: #2a2a2a;  /* Changed from white to dark gray */
+    display: block;             
+    margin-left: auto;          
+    margin-right: auto;         
+}
+
+/* Ensure project cards maintain their style */
+.project {
+    padding: 20px;
+    background-color: #111;
+    border-radius: 8px;
+    border: 1px solid #333;
+    overflow: hidden;
 }

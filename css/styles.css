@@ -8,7 +8,7 @@ body {
     color: white;
     background-color: black;
     line-height: 1.8;            /* Adjust for readability */
-    font-size: 24px;             /* Base text size */
+    font-size: 15px;             /* Reduced from default (usually 16px) */
 }
 
 /* Header Styling */
@@ -33,10 +33,10 @@ header a:hover {
 
 /* Main Content Styling */
 main {
-    flex: 1;                      /* Push footer to the bottom */
-    margin: 50px 50px 50px 400px; /* Adjust left margin to 100px */
-    max-width: 800px;             /* Limit the width of the content */
-    text-align: left;             /* Ensure text is left-aligned */
+    flex: 1;
+    margin: 50px 250px 50px 250px;
+    max-width: 1000px;
+    text-align: left;
 }
 
 /* Footer Styling */
@@ -51,8 +51,12 @@ footer {
 
 /* Page Titles */
 h1 {
-    font-size: 3.5em;            /* Increased title size */
+    font-size: 2.5em;            /* Reduced from default */
     margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.4em;            /* Reduced from default */
 }
 
 /* Highlighted Links */
@@ -71,4 +75,60 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+}
+
+/* Projects Grid Layout */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 2em;
+}
+
+.project {
+    padding: 20px;
+    background-color: #111;
+    border-radius: 8px;
+    border: 1px solid #333;
+    overflow: hidden;          /* Ensures image stays within rounded corners */
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #5daeff;
+    font-size: 1.3em;            /* Reduced from 1.5em */
+}
+
+.project ul {
+    margin-bottom: 0;
+}
+
+/* Paragraph and list text */
+p, li {
+    line-height: 1.5;            /* Maintain good line height for readability */
+}
+
+/* Essay Styling */
+.essay-date {
+    color: #666;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+}
+
+.essay-content {
+    line-height: 1.6;
+    margin-top: 2em;
+}
+
+.essay-content p {
+    margin-bottom: 1.5em;
+}
+
+/* Project Image Styling */
+.project-image {
+    width: calc(100% + 40px);  /* Full width plus padding offset */
+    height: 200px;             /* Adjust this value to your preference */
+    object-fit: cover;
+    margin: -20px -20px 15px -20px;  /* Negative margin to offset padding */
+    border-radius: 8px 8px 0 0;      /* Round only top corners to match card */
 }

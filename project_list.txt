@@ -1,0 +1,47 @@
+1. Webcam-based Painter
+- Software that allows the user to pick a portion of their webcam image to be a magic paintbrush which will move leave a trail of color as it moves across the screen. The program can also recolor an image's largest regions for a neat design.
+- Employed BFS to create the flood-fill region growing/filling algorithm
+— Java
+2. Quadtree
+- Quadtree in Java for efficient spatial querying and collision detection. Built two interactive GUIs: DotTreeGUI for constructing and querying quadtree structures, and CollisionGUI for detecting and visualizing collisions among moving points. Tested functionality with structured test cases and visual feedback, demonstrating efficient handling of spatial data.
+- Created a recursive quadtree structure, generic types, and interfaces. Used recursive insertion, spatial searches, and collision detection.
+— Java
+3. Huffman Encoding
+— Huffman encoding and decoding to compress and decompress files in Java. The project utilized trees, priority queues, maps, and file I/O to construct prefix-free encoding trees based on character frequency. It emphasized efficient compression and accurate reconstruction of files using binary encodings and decoding algorithms.
+— Built and managed binary trees and priority queues. Read and wrote files to handle binary formats for compression and reconstruction
+4. Degrees of Separation
+— Analyzes a social network of actors to determine their "Bacon Number," or degrees of separation from Kevin Bacon. Constructed a graph with actors as vertices and edges representing movies they co-starred in. Interactive interface allowed users to explore connections, switch centers, and analyze network properties.
+— Implemented graph algorithms (BFS) to find shortest paths. Parsed files to extract graph data.
+— Java
+5. Part of Speech Tagging
+— A Hidden Markov Model (HMM) for POS tagging. Trained on datasets to compute transition and observation probabilities. Used the Viterbi algorithm to predict the most likely tag sequence for sentences. Evaluated performance with accuracy metrics and handled unseen words with adjustable penalties. Supported console and file-based testing.
+— Used HMM architecture, probabilistic modelling, and Viterbi algorithm
+—Java
+6. Collaborative GUI
+— A collaborative graphical editor where multiple clients could simultaneously draw and edit shapes like rectangles, ellipses, and freehand lines on a shared canvas. A client-server architecture ensured synchronization across clients, with the server maintaining a consistent global view of the sketch. Clients communicated with the server using string-based messages for actions like adding, deleting, moving, and recoloring shapes. Support for multiple clients included mechanisms to handle multi-user collaboration and conflict resolution.
+— Handled client-server communication requests with synchronized GUI.
+— Java
+7. Search Engine
+— A search engine that can scan HTML pages for words, and return a ranked index according to the ones that matched your query. Loosely based on this paper: http://ilpubs.stanford.edu:8090/457/1/2000-37.pdf and the original Google search algorithm.
+— Used valgrind, gdb, to debug and handle memory leaks.
+– C
+8. Nuggets Games
+— Multiplayer game that users can play in the terminal. They race to find 'nuggets' in an interactive map which displays their competitors and the leaderboard in real-time.
+— Completed with 3 other people and used Git/Github for version control. 
+— Developed requirements, design, and implementation spec sheets. Learned SCRUM management system. 
+— C
+9. Evolution Simulator
+— Simulates evolution with a series of dots that learn to hit a moving target. Employs the NEAT algorithm for evolution and graphically displays generations. 
+— Python
+10. Adversarially Robust Style Transfer
+— Research project to perform Style Transfer on Images using an adversarially robust style classifier. I was interested in some of the emergent properties of adversarially robust models and wanted to try training my own.
+— Pytorch, Adversarially Robust Neural Networks, Image Classification
+11. Federated Learning Privacy Exploit in ASR Systems
+— Resulted in first conference-accepted coauthored paper,"Reconstructing speech features of Automatic Speech Recognition systems in Federated Learning by Gradient descent." Optimized a privacy exploit in Federated Learning to reconstruct private user ASR data. 
+— Pytorch, Federated Learning, ASR Systems
+12. Website
+— Coded this website using HTML and CSS
+13. Image Quality Assessment 
+— Worked to train models for classifying the quality of mammograms 
+— Image segmentation, pytorch, U-net architecture
+

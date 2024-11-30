@@ -7,8 +7,8 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     background-color: black;
-    line-height: 1.8;            /* Adjust for readability */
-    font-size: 15px;             /* Reduced from default (usually 16px) */
+    line-height: 1.6;            /* Added for better readability */
+    font-size: 18px;             /* Increased from default 16px */
 }
 
 /* Header Styling */
@@ -51,12 +51,12 @@ footer {
 
 /* Page Titles */
 h1 {
-    font-size: 2.5em;            /* Reduced from default */
+    font-size: 2.5em;            /* ~45px */
     margin-bottom: 0.5em;
 }
 
 h2 {
-    font-size: 1.4em;            /* Reduced from default */
+    font-size: 1.8em;            /* ~32px */
 }
 
 /* Highlighted Links */
@@ -106,6 +106,7 @@ ul li {
 /* Paragraph and list text */
 p, li {
     line-height: 1.5;            /* Maintain good line height for readability */
+    font-size: 1.1em;            /* ~20px */
 }
 
 /* Essay Styling */
@@ -130,9 +131,9 @@ p, li {
     height: 200px;              
     object-fit: scale-down;     
     margin: 0px 0px 15px -20px;
-    border-radius: 0px 0px 0 0;
+    border-radius: 8px;         
     padding: 20px;
-    background-color: #2a2a2a;  /* Changed from white to dark gray */
+    background-color: #3a3a3a;  /* Changed from #2a2a2a to a lighter gray */
     display: block;             
     margin-left: auto;          
     margin-right: auto;         

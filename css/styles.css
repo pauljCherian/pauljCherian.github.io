@@ -1,19 +1,21 @@
 /* Body Styling */
 body {
-    display: flex;               /* Enable Flexbox for layout */
-    flex-direction: column;      /* Stack header, main, and footer vertically */
-    min-height: 100vh;           /* Full height of the viewport */
-    margin: 0;                   /* Remove default body margin */
+    display: flex;               
+    flex-direction: column;      
+    min-height: 100vh;           
     font-family: Arial, sans-serif;
     color: white;
     background-color: black;
-    line-height: 1.6;            /* Added for better readability */
-    font-size: 18px;             /* Increased from default 16px */
+    line-height: 1.6;            
+    font-size: 18px;             
+    max-width: 1800px;           
+    width: 95%;                  
+    margin: 0 auto;              
 }
 
 /* Header Styling */
 header {
-    position: absolute;
+    position: absolute;          
     top: 20px;
     right: 40px;
     text-align: right;
@@ -34,9 +36,10 @@ header a:hover {
 /* Main Content Styling */
 main {
     flex: 1;
-    margin: 50px 250px 50px 250px;
-    max-width: 1000px;
+    margin: 50px 300px;
+    max-width: 1800px;          
     text-align: left;
+    padding: 0 40px;            
 }
 
 /* Footer Styling */
@@ -82,31 +85,47 @@ ul li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-top: 2em;
+    margin: 50px 200px 50px -250px;
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
     background-color: #111;
     border-radius: 8px;
     border: 1px solid #333;
-    overflow: hidden;          /* Ensures image stays within rounded corners */
 }
 
 .project h2 {
     margin-top: 0;
     color: #5daeff;
-    font-size: 1.3em;            /* Reduced from 1.5em */
+    font-size: 1.3em;
+    width: 100%;               /* Full width for titles */
+    text-align: left;          /* Keep titles left-aligned */
 }
 
-.project ul {
-    margin-bottom: 0;
+.project p, .project ul {
+    width: 100%;               /* Full width for text content */
+    text-align: left;          /* Keep text left-aligned */
+}
+
+.project-image {
+    width: 500px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;            /* Vertical spacing only */
 }
 
 /* Paragraph and list text */
 p, li {
-    line-height: 1.5;            /* Maintain good line height for readability */
-    font-size: 1.1em;            /* ~20px */
+    line-height: 1.5;
+    font-size: 1.1em;
 }
 
 /* Essay Styling */
@@ -123,27 +142,4 @@ p, li {
 
 .essay-content p {
     margin-bottom: 1.5em;
-}
-
-/* Project Image Styling */
-.project-image {
-    width: 400px;               
-    height: 200px;              
-    object-fit: scale-down;     
-    margin: 0px 0px 15px -20px;
-    border-radius: 8px;         
-    padding: 20px;
-    background-color: #3a3a3a;  /* Changed from #2a2a2a to a lighter gray */
-    display: block;             
-    margin-left: auto;          
-    margin-right: auto;         
-}
-
-/* Ensure project cards maintain their style */
-.project {
-    padding: 20px;
-    background-color: #111;
-    border-radius: 8px;
-    border: 1px solid #333;
-    overflow: hidden;
 }

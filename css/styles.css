@@ -9,13 +9,15 @@ body {
     background-color: black;
     line-height: 1.6;            /* Added for better readability */
     font-size: 18px;             /* Increased from default 16px */
+    max-width: 650px;
+    width: 65%;  /* This will create the narrower text column you want */
+    margin: 0 auto;  /* Centers the content */
 }
 
 /* Header Styling */
 header {
-    position: absolute;
-    top: 20px;
-    right: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
     text-align: right;
 }
 
@@ -34,9 +36,10 @@ header a:hover {
 /* Main Content Styling */
 main {
     flex: 1;
-    margin: 50px 250px 50px 250px;
-    max-width: 1000px;
+    margin: 0 auto;  /* Adjusted margin since header is no longer absolute */
+    max-width: 650px;
     text-align: left;
+    padding: 0 20px;
 }
 
 /* Footer Styling */
@@ -53,10 +56,12 @@ footer {
 h1 {
     font-size: 2.5em;            /* ~45px */
     margin-bottom: 0.5em;
+    width: 100%;  /* Makes text elements fill the narrowed container */
 }
 
 h2 {
     font-size: 1.8em;            /* ~32px */
+    width: 100%;  /* Makes text elements fill the narrowed container */
 }
 
 /* Highlighted Links */
@@ -147,3 +152,4 @@ p, li {
     border: 1px solid #333;
     overflow: hidden;
 }
+

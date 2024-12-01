@@ -143,3 +143,13 @@ p, li {
 .essay-content p {
     margin-bottom: 1.5em;
 }
+
+/* Projects Page Header */
+.projects-header {
+    margin-left: -250px;    /* Match the negative margin we used for the grid */
+}
+
+/* Projects Description */
+.projects-description {
+    margin-left: -250px;    /* Same margin as header */
+}

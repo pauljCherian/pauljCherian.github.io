@@ -153,3 +153,9 @@ p, li {
 .projects-description {
     margin-left: -250px;    /* Same margin as header */
 }
+
+/* Style Credit */
+.style-credit {
+    font-size: 0.8em;  /* Smaller font size */
+    color: #888;       /* Optional: lighter color */
+}

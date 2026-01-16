@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Essay Title] - Paul Cherian</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h2>Paul Cherian</h2>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../writing.html">Writing</a>
+        <a href="../courses.html">Courses</a>
+        <a href="../projects.html">Projects</a>
+    </header>
+    <main>
+        <h1>[AI Agents in Berlin]</h1>
+        <div class="essay-date">[Date]</div>
+        
+        <article class="essay-content">
+            Over the 2025 summer, I worked at Zendesk on their AI agents team, in Berlin, Germany. There, I focused on agent evaluation and testing. I was lucky enough to work with an incredible team of developers, scientists, product managers who made it an incredible summer.
+
+            Zendesk is the epitome of a company working on the cutting edge of Applied AI. I saw this on a day-to-day basis as we developed our agentic pipeline. For those that don't know, Zendesk makes software for other enterprises to run and track their customer service. They have been doing this since 2007 and emerged as the leader in this space. More recently, however, with the boom of Generative AI, there is now a possibility (and a push) to start automating the resolution of customer service interactions. Indeed, this has become the archetypal use-case of LLMs that is often pointed to. Companies like Yellow, Decagon, Sierra, and more, are all trying to realize the goal of automated and seamless customer service for all. The promise of AI agents has spurred an industry shift, where companies are now switching to outcome-based pricing from the legacy per-seat pricing. This means that customers of Zendesk and co. will now no longer pay depending on the # of company customer service representatives that are using the Zendesk platform, rather they will pay depending on the # of automated resolutions that Zendesk' provides. Simply, if Zendesk's agents don't work, then Zendesk doesn't get paid. The industry is betting the farm on the success of ai agents. 
+
+            My work at Zendesk was aimed with answering one question: "How do we evaluate the reliability and robustness of our agents?" This is a difficult question to answer, (let alone implement) when our input space of all possible conversations is practically infinite. The result of my work was a set of developer tools that did become the company standard for AI Agent testing and evaluation. 
+            
+            Working on these tools was a phenomenal experience. My time at Zendesk was spent being proactive, where in order to actually spec out and decompose the framework I was going to be building, I had to actively seek out developers across the organization to hear their feedback and get their guidance. To the different 'owners' of agents, I had to ask "what abstraction would be most useful to evaluate your agents?" This proved to be an incredibly valuable set of conversations, since it forced me to deeply understand what the need I was building for actually was. Furthermore, having these conversations with some of the world's best backend engineers, ML engineers, and AI scientists provided really important context on what the frontier of implementing agents actually meant.
+
+            At a broad level, everything we did at Zendesk was to get middle-to-middle LLMs to work in an end-to-end fashion. This is goal of all applied AI companies and takes a mountain of engineering work to do. And the best part? There's no playbook on how to do so. No one has authored a textbook about how to product reliable agents, nonetheless ones that are quick and interpretable for a variety of use-cases. No one has a set answer about whether we should use frontier models, mini-models, nano-models, quantization, fine-tuning, how/if we should subdivide a task, whether we should use an orchestrator, etc... Should it ever even be the case that we do have answers to all these questions, the underlying technology is changing so quickly (with even more variance now that we have squeezed the juice out of scaling, necessitating a push back to more fundamental research). This is compounded by the intricacies of adding structure to LLMs within each specific vertical
+
+            There is still a long way to go to make these models reliable enough to take care of 100% of customer interactions. That's why companies like Zendesk, Sierra, Decagon, Pylon, and Cresta are valuable. Companies need to maintain service with a variety of support flows, languages, formats, mediums, and ultimately do so in a timely manner (we don't have enough time for CoT or heavy model calls). There is tons of work both from a product standpoint, to see what types of customer service features are actually most valuable to develop, and from a research standpoint, to experiment with new agent architectures, quantization and pruning methods, distillation, and more. But in my cursory and humble opinion after working for this on a summer, 80% of all interactions is doable in the near future. With improved infrastructure to address all of the above challenges of building reliable agents (being built both internally and externally in companies), and then adapting them to the specific needs of enterprise customer support, I think there is a real opportunity to change CX with incredibly strong engineering in the next 2-4 years.
+
+            
+
+        </article>
+    </main>
+</body>
+</html> 

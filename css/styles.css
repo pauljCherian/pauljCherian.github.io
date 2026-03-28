@@ -3,7 +3,7 @@ body {
     display: flex;               
     flex-direction: column;      
     min-height: 100vh;           
-    font-family: Arial, sans-serif;
+    font-family: "Georgia", "Times New Roman", serif;
     color: white;
     background-color: black;
     line-height: 1.6;            

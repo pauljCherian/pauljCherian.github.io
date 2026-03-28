@@ -35,6 +35,28 @@
             </div>
 
             <div class="project">
+                <h2>Generative Agents: Interactive Simulacra of Human Behavior</h2>
+                <p>A full replication of the <a href="https://arxiv.org/abs/2304.03442" target="_blank">Park et al. (2023)</a> generative agents paper using Anthropic Claude. 25 agents inhabit a sandbox town with homes, a cafe, a park, shops, and a town hall.</p>
+                <ul>
+                    <li>Implemented complete agent architecture: memory stream with recency/importance/relevance retrieval, reflection engine, recursive daily planning, and perceive-retrieve-react cycle</li>
+                    <li>Built simulation engine with 10-minute timesteps, spatial world management, and WebSocket broadcast for real-time observation</li>
+                    <li>Multi-turn dialogue system enabling emergent conversations between agents</li>
+                </ul>
+                <p><a href="https://github.com/pauljCherian/generative-agents" target="_blank">GitHub →</a></p>
+            </div>
+
+            <div class="project">
+                <h2>Biographical RAG System</h2>
+                <p>A Retrieval Augmented Generation system for intelligent conversations about historical figures using their actual writings and biographical content.</p>
+                <ul>
+                    <li>Built smart content scraping pipeline for Wikisource, Project Gutenberg, speeches, letters, and historical essays</li>
+                    <li>Implemented semantic search with ChromaDB vector storage and persistent embeddings</li>
+                    <li>GPT-4 powered Q&A with source citations and factual grounding from retrieved content</li>
+                </ul>
+                <p><a href="https://github.com/pauljCherian/biographical_RAG" target="_blank">GitHub →</a></p>
+            </div>
+
+            <div class="project">
                 <h2>Adversarially Robust Style Transfer</h2>
                 <div class="image-wrapper">
                     <img src="images/projects/Style_transfer_2.png" alt="Style Transfer Visualization" class="project-image">
@@ -48,9 +70,20 @@
             </div>
 
             <div class="project">
+                <h2>Git Docs</h2>
+                <p>A hosted, single-page todo and notes app with git-inspired revision controls — sync, commit, and branch your notes like code.</p>
+                <ul>
+                    <li>Built with Next.js App Router and React 19</li>
+                    <li>Supabase backend for persistent storage with snapshot-based version history</li>
+                    <li>Git-style workflow: sync saves working state, commit creates snapshots with messages, branch creates named version streams</li>
+                </ul>
+                <p><a href="https://github.com/pauljCherian/git-docs" target="_blank">GitHub →</a></p>
+            </div>
+
+            <div class="project">
                 <h2>Medical Image Quality Assessment</h2>
                 <div class="image-wrapper">
-                    <img src="images/projects/IQA.png" alt="image Quality Assesment Data" class="project-image">
+                    <img src="images/projects/IQA.png" alt="Image Quality Assessment Data" class="project-image">
                 </div>
                 <p>Developed deep learning models to automatically assess the quality of mammogram images, aiming to improve medical imaging workflows and diagnostic reliability.</p>
                 <ul>
@@ -59,7 +92,32 @@
                     <li>Conducted data exploration on radiologist annotations of mammogram quality. Used Pandas and Seaborn for data analysis</li>
                 </ul>
             </div>
-            
+
+            <div class="project">
+                <h2>WhisperChain</h2>
+                <p>A secure, role-based messaging platform with anonymous communication, moderation tools, and message flagging. Team project.</p>
+                <ul>
+                    <li>Implemented client-server architecture with role-based access controls (admin, moderator, user)</li>
+                    <li>Built server-side authentication, message routing, and security/moderation policy enforcement</li>
+                    <li>Designed standardized message protocol for reliable client-server communication</li>
+                </ul>
+                <p><a href="https://github.com/pauljCherian/WhisperChain" target="_blank">GitHub →</a></p>
+            </div>
+
+            <div class="project">
+                <h2>DALI Data Challenge 2025</h2>
+                <div class="image-wrapper">
+                    <img src="images/projects/EvolutionSim.png" alt="DALI Data Challenge" class="project-image">
+                </div>
+                <p>Computer vision challenge to count barnacles in images. Experimented with traditional CV techniques (chunking, thresholding, binarization, contour detection) and Meta's Segment Anything Model (SAM).</p>
+                <ul>
+                    <li>Implemented multiple evaluation metrics: naive count comparison, IoU, Dice coefficient, and accuracy</li>
+                    <li>Explored SAM automatic mask detection with tuned hyperparameters for biological image segmentation</li>
+                    <li>Proposed hybrid approach combining traditional CV filtering with SAM prompting for improved precision</li>
+                </ul>
+                <p><a href="https://github.com/pauljCherian/DALI-Data-Challenge-2025" target="_blank">GitHub →</a></p>
+            </div>
+
             <div class="project">
                 <h2>Evolution Simulator</h2>
                 <div class="image-wrapper">
@@ -70,7 +128,9 @@
                     <li>Built interactive visualization system using PyGame</li>
                     <li>Implemented NEAT evolutionary algorithm from scratch</li>
                 </ul>
+                <p><a href="https://github.com/pauljCherian/evolutionSimulator2023" target="_blank">GitHub →</a></p>
             </div>
+
             <div class="project">
                 <h2>Tiny Search Engine</h2>
                 <div class="image-wrapper">
@@ -81,71 +141,6 @@
                     <li>Built efficient indexing and ranking systems</li>
                     <li>Implemented PageRank-based result ranking</li>
                     <li>Used valgrind/GDB for debugging</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <h2>Collaborative Drawing Application</h2>
-                <div class="image-wrapper">
-                    <img src="images/projects/CollaborativeGUi.png" alt="Collaborative GUI Snapshot" class="project-image"> 
-                </div>
-                <p>Built a multi-user graphical editor enabling real-time collaborative drawing with synchronized shape editing, movement, and styling across multiple clients.</p>
-                <ul>
-                    <li>Implemented client-server architecture with real-time synchronization</li>
-                    <li>Built interactive GUI with concurrent operation handling</li>
-                    <li>Managed distributed state and conflict resolution with threading and synchronization</li>
-                </ul>
-            </div>
-
-           
-            <div class="project">
-                <h2>Part of Speech Tagger</h2>
-                <div class="image-wrapper">
-                    <img src="images/projects/POSTagger.png" alt="POS tagged sentences" class="project-image"> 
-                </div>
-                <p>Created a Natural Language Processing system using Hidden Markov Models to automatically tag parts of speech in text, with support for handling unknown words.</p>
-                <ul>
-                    <li>Implemented HMM and Viterbi algorithm in Java</li>
-                    <li>Built transition and observation models</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <h2>Multiplayer Nuggets Game</h2>
-                <div class="image-wrapper">
-                    <img src="images/projects/nuggetsGame.png" alt="Nuggets Spectator Snapshot" class="project-image">
-                </div>
-                <p>Led a team to develop a terminal-based multiplayer game where players compete to collect nuggets in an interactive map with real-time updates.</p>
-                <ul>
-                    <li>Built game logic and terminal interface</li>
-                    <li>Managed 4-person development team using SCRUM</li>
-                    <li>Coordinated development using Git/GitHub</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <h2>Webcam Painter</h2>
-                <div class="image-wrapper">
-                    <img src="images/projects/webcamtest.png" alt="Blue Hand" class="project-image">
-                </div>
-                <p>Developed an interactive application that turns webcam regions into dynamic paintbrushes, featuring region-based color filling and creative image manipulation.</p>
-                <ul>
-                    <li>Implemented webcam integration and image processing</li>
-                    <li>Created BFS-based flood-fill system</li>
-                    <li>Built interactive GUI and image manipulation tools</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <h2>Quadtree Data Structure Implementation</h2>
-                <div class="image-wrapper">
-                    <img src="images/projects/dotTree.png" alt="Quadtree with dots" class="project-image">
-                </div>
-                <p>Built a quadtree-based system for efficient spatial querying and collision detection, with interactive GUIs for visualization and testing.</p>
-                <ul>
-                    <li>Implemented recursive quadtree with generic types in Java</li>
-                    <li>Created efficient spatial search and collision detection</li>
-                    <li>Developed interactive visualization system</li>
                 </ul>
             </div>
         </section>

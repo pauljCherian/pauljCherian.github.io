@@ -22,108 +22,94 @@
         <!-- Projects Section -->
         <section id="projects">
             <div class="project">
-                <h2>"Reconstructing Speech Features of Automatic Speech Recognition Systems in Federated Learning by Gradient Descent"</h2>
-                <p>Co-authored paper, <a href="https://drive.google.com/file/d/1tRXCPWlV7CWPQdP_7b7ZKj3VKCfM9I4C/view?usp=sharing" target="_blank">"Reconstructing Speech Samples of Automatic Speech Recognition Systems in Federated Learning by Gradient Descent"</a> (ACCEPTED, <i>Complex Networks and Their Applications 2024</i>).</p>
+                <h2>Wrap It All</h2>
+                <p>Spotify Wrapped-style desktop app that analyzes your email and calendar data to generate personalized year-in-review analytics with AI-powered insights.</p>
                 <ul>
-                    <li>Developed PyTorch codebase to implement federated learning on LibriSpeech corpus. Wrote core gradients matching algorithm to reconstruct spectrograms with a first-order optimization</li>
-                    <li>Published findings in peer-reviewed conference paper, <i>Complex Networks and Their Applications 2024</i></li>
-                    <li>Built and optimized deep learning models for speech recognition using modern speech recognition models e.g. DeepSpeech1. Experimented with loss functions and regularization techniques to improve reconstruction quality</li>
+                    <li>Built with Electron, React, and Prisma/SQLite; integrates Gmail, Outlook, and Google Calendar via OAuth</li>
+                    <li>Claude API for sentiment analysis, tone detection, and natural language chat over wrap data</li>
                 </ul>
             </div>
 
             <div class="project">
-                <h2>Generative Agents: Interactive Simulacra of Human Behavior</h2>
-                <p>A full replication of the <a href="https://arxiv.org/abs/2304.03442" target="_blank">Park et al. (2023)</a> generative agents paper using Anthropic Claude. 25 agents inhabit a sandbox town with homes, a cafe, a park, shops, and a town hall.</p>
+                <h2>DNS Tunnel</h2>
+                <p>Tunnels HTTP traffic through DNS queries to access websites when normal internet traffic is blocked, using a Stop-and-Wait protocol for reliable data transfer.</p>
                 <ul>
-                    <li>Implemented complete agent architecture: memory stream with recency/importance/relevance retrieval, reflection engine, recursive daily planning, and perceive-retrieve-react cycle</li>
-                    <li>Built simulation engine with 10-minute timesteps, spatial world management, and WebSocket broadcast for real-time observation</li>
-                    <li>Multi-turn dialogue system enabling emergent conversations between agents</li>
+                    <li>Built client-server system in Python with Scapy for DNS packet crafting and Base64-encoded TXT record payloads</li>
+                    <li>Implemented alternating-bit reliability protocol with Internet Checksum validation</li>
                 </ul>
-                <p><a href="https://github.com/pauljCherian/generative-agents" target="_blank">GitHub →</a></p>
+            </div>
+
+            <div class="project">
+                <h2>Federated Learning Speech Reconstruction</h2>
+                <p>Co-authored <a href="https://drive.google.com/file/d/1tRXCPWlV7CWPQdP_7b7ZKj3VKCfM9I4C/view?usp=sharing" target="_blank">paper</a> on reconstructing speech from federated learning gradients (ACCEPTED, <i>Complex Networks 2024</i>).</p>
+                <ul>
+                    <li>Implemented gradient-matching attack in PyTorch on LibriSpeech corpus to reconstruct spectrograms</li>
+                    <li>Experimented with DeepSpeech1, various loss functions, and regularization techniques</li>
+                </ul>
             </div>
 
             <div class="project">
                 <h2>Biographical RAG System</h2>
-                <p>A Retrieval Augmented Generation system for intelligent conversations about historical figures using their actual writings and biographical content.</p>
+                <p>RAG system for conversations about historical figures using their actual writings and biographical content.</p>
                 <ul>
-                    <li>Built smart content scraping pipeline for Wikisource, Project Gutenberg, speeches, letters, and historical essays</li>
-                    <li>Implemented semantic search with ChromaDB vector storage and persistent embeddings</li>
-                    <li>GPT-4 powered Q&A with source citations and factual grounding from retrieved content</li>
+                    <li>Content scraping pipeline for Wikisource, Project Gutenberg, speeches, and letters</li>
+                    <li>Semantic search with ChromaDB; GPT-4 Q&A with source citations</li>
                 </ul>
                 <p><a href="https://github.com/pauljCherian/biographical_RAG" target="_blank">GitHub →</a></p>
             </div>
 
             <div class="project">
                 <h2>Adversarially Robust Style Transfer</h2>
-                <p>Developed an innovative approach to style transfer, exploring adversarially robust style classifiers and emergent properties of robust models for artistic applications. Also experimented with splicing layers of CNNs for Neural Style Transfer method.</p>
+                <p>Explored adversarially robust style classifiers and CNN layer splicing for Neural Style Transfer.</p>
                 <ul>
-                    <li>Implemented adversarially robust neural networks in PyTorch</li>
-                    <li>Built base-classifier using pre-trained VGG, SqueezeNet, and ResNet CNNs to classify style of images. Then used <a href="https://github.com/Harry24k/adversarial-attacks-pytorch" target="_blank">Torchattacks</a> to generate adversarial examples</li>
-                    <li>Wrote custom PyTorch dataloaders to load images from Kaggle dataset</li>
+                    <li>Built style classifiers with VGG, SqueezeNet, and ResNet; generated adversarial examples with <a href="https://github.com/Harry24k/adversarial-attacks-pytorch" target="_blank">Torchattacks</a></li>
                 </ul>
             </div>
 
             <div class="project">
                 <h2>Git Docs</h2>
-                <p>A hosted, single-page todo and notes app with git-inspired revision controls — sync, commit, and branch your notes like code.</p>
+                <p>Single-page notes app with git-inspired revision controls — sync, commit, and branch your notes like code.</p>
                 <ul>
-                    <li>Built with Next.js App Router and React 19</li>
-                    <li>Supabase backend for persistent storage with snapshot-based version history</li>
-                    <li>Git-style workflow: sync saves working state, commit creates snapshots with messages, branch creates named version streams</li>
+                    <li>Next.js App Router, React 19, Supabase for persistent storage with snapshot-based version history</li>
                 </ul>
                 <p><a href="https://github.com/pauljCherian/git-docs" target="_blank">GitHub →</a></p>
             </div>
 
             <div class="project">
                 <h2>Medical Image Quality Assessment</h2>
-                <p>Developed deep learning models to automatically assess the quality of mammogram images, aiming to improve medical imaging workflows and diagnostic reliability.</p>
+                <p>Deep learning models to assess mammogram image quality for improved diagnostic workflows.</p>
                 <ul>
-                    <li>Implemented U-Net architecture for image segmentation</li>
-                    <li>Built and trained medical imaging models</li>
-                    <li>Conducted data exploration on radiologist annotations of mammogram quality. Used Pandas and Seaborn for data analysis</li>
+                    <li>U-Net segmentation; analyzed radiologist annotations with Pandas and Seaborn</li>
                 </ul>
             </div>
 
             <div class="project">
                 <h2>WhisperChain</h2>
-                <p>A secure, role-based messaging platform with anonymous communication, moderation tools, and message flagging. Team project.</p>
+                <p>Secure, role-based anonymous messaging platform with moderation tools and message flagging. Team project.</p>
                 <ul>
-                    <li>Implemented client-server architecture with role-based access controls (admin, moderator, user)</li>
-                    <li>Built server-side authentication, message routing, and security/moderation policy enforcement</li>
-                    <li>Designed standardized message protocol for reliable client-server communication</li>
+                    <li>Client-server architecture with role-based access controls and standardized message protocol</li>
                 </ul>
                 <p><a href="https://github.com/pauljCherian/WhisperChain" target="_blank">GitHub →</a></p>
             </div>
 
             <div class="project">
                 <h2>DALI Data Challenge 2025</h2>
-                <p>Computer vision challenge to count barnacles in images. Experimented with traditional CV techniques (chunking, thresholding, binarization, contour detection) and Meta's Segment Anything Model (SAM).</p>
+                <p>Computer vision challenge to count barnacles in images using traditional CV techniques and Meta's Segment Anything Model (SAM).</p>
                 <ul>
-                    <li>Implemented multiple evaluation metrics: naive count comparison, IoU, Dice coefficient, and accuracy</li>
-                    <li>Explored SAM automatic mask detection with tuned hyperparameters for biological image segmentation</li>
-                    <li>Proposed hybrid approach combining traditional CV filtering with SAM prompting for improved precision</li>
+                    <li>Evaluated with IoU, Dice coefficient, and accuracy; proposed hybrid CV + SAM approach</li>
                 </ul>
                 <p><a href="https://github.com/pauljCherian/DALI-Data-Challenge-2025" target="_blank">GitHub →</a></p>
             </div>
 
             <div class="project">
                 <h2>Evolution Simulator</h2>
-                <p>Created a visual simulation of evolutionary algorithms where agents learn to hit moving targets, implementing the NEAT (NeuroEvolution of Augmenting Topologies) algorithm.</p>
-                <ul>
-                    <li>Built interactive visualization system using PyGame</li>
-                    <li>Implemented NEAT evolutionary algorithm from scratch</li>
-                </ul>
+                <p>Visual simulation where agents evolve to hit moving targets using NEAT. Built with PyGame.</p>
                 <p><a href="https://github.com/pauljCherian/evolutionSimulator2023" target="_blank">GitHub →</a></p>
             </div>
 
             <div class="project">
                 <h2>Tiny Search Engine</h2>
-                <p>Implemented a search engine based on early Google algorithms, capable of crawling HTML pages, indexing and ranking results. Modelled after early PageRank algorithm.</p>
-                <ul>
-                    <li>Built efficient indexing and ranking systems</li>
-                    <li>Implemented PageRank-based result ranking</li>
-                    <li>Used valgrind/GDB for debugging</li>
-                </ul>
+                <p>Search engine that crawls HTML pages, indexes content, and ranks results using a PageRank-based algorithm. Written in C.</p>
             </div>
         </section>
     </main>

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/paulcherian/Desktop/Projects/paulcherian.github.io log --all --oneline)",
+      "Bash(git:*)"
+    ]
+  }
+}
